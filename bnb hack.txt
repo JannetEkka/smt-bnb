@@ -1,0 +1,220 @@
+Prize pool
+36,000 USD
+
+event timeline
+4 days left for submission
+
+Upcoming
+Submission
+2026/06/03 17:30
+Deadline
+2026/06/21 17:30
+
+Virtual
+
+Hackathon Tags
+Blockchain
+AI
+Trading
+AI Agent
+Signals
+Data
+
+web3 ecosystem
+BNB Chain
+Trust Wallet
+web3
+AI
+CoinMarketCap
+
+Submission Requirements
+GitHub/Gitlab/Bitbucket Link Required
+
+DETAILS
+BNB Hack: AI Trading Agent Edition ⚡️ CoinMarketCap × Trust Wallet
+Ship a crypto-native AI trading agent on BNB Chain in 3 weeks. $36,000 prize pool. Two tracks. One stack that works out of the box.
+
+Why build here
+AI agents are eating crypto. The bottleneck has always been infrastructure. Every team rebuilds the same data layer and the same execution layer before writing a single line of actual agent logic.
+
+Our stack removes that step. You get the cleanest agent stack in crypto, pre-wired and free for the duration:
+
+🧠 CoinMarketCap AI Agent Hub: agent-native crypto data across CEX, derivatives, on-chain, social, KOLs, and news. MCP, x402, CLI, and a growing Skills library.
+🔐 Trust Wallet Agent Kit (TWAK): self-custody local signing across 30+ chains, with MCP / REST / CLI / LangChain coverage and native x402 support.
+🛠️ BNB AI Agent SDK: the fastest path from idea to a working agent on BSC.
+🌐 BNB Chain: fast blocks, cheap gas, and the ecosystem moving fastest on agents right now.
+Bring the idea. Skip the plumbing. Ship in days, not weeks.
+
+Join the hackathon telegram group here: https://t.me/+MhiOLT0YUnlmNWFk
+
+Two tracks. One prize pool. Pick one.
+🤖 Track 1. Autonomous Trading Agents ($24,000, 5 winners)
+Powered by CMC + Trust Wallet + BNB AI Agent SDK
+
+Build an agent that reads markets and acts on them (natural-language strategy in, on-chain execution out). Your agent reads markets via CMC, decides, and signs and processes its own transactions via TWAK, all within the rules you set. Then it trades live on BSC during the competition week, and we score it on real PnL (with a few tweaks, see below).
+
+Example builds:
+
+An agent that combines CMC funding rates and Fear & Greed with TWAK auto-execution to rotate between BSC perps
+A "DCA agent with a personality" that is sentiment-aware, talks back, and signs its own txs
+A copy-trader that mirrors top wallets through your own risk filters
+📊 Track 2. Strategy Skills ($6,000, 3 winners)
+Powered by CMC
+
+Lower entry bar, no execution layer required. Build a CMC Skill that turns market data into a trading strategy. Your deliverable is a backtestable strategy spec, not a live-trading agent. Think Quantopian-style strategy generation, adapted to crypto and authored as an LLM Skill.
+
+Example builds:
+
+A momentum Skill that blends RSI, MACD, and Fear & Greed into entry and exit rules
+A sentiment-divergence Skill that flags when social heat and on-chain flow disagree
+A regime-detection Skill that switches strategy based on derivatives positioning
+Special prizes 🏅
+Three cross-track bonuses, $2,000 each. You can win a main placement and a special.
+
+Best Use of Trust Wallet Agent Kit (Track 1)
+For the agent that pushes TWAK the furthest. Self-custody signing, autonomous-mode execution, and native x402 used as the heart of a genuinely hands-off trader, not just plumbing bolted onto an LLM.
+
+Judging Criteria for this track
+
+What wins it. For the agent that pushes TWAK the furthest. Self-custody signing, autonomous-mode execution, and native x402 used as the heart of a genuinely hands-off trader, not plumbing bolted onto an LLM.
+
+How it's scored. Like all special prizes, this is decided by the discretionary panel against the four criteria (technical execution, originality, real-world relevance, demo). We weight them as follows for this award:
+
+Best Use of Trust Wallet Agent Kit, scoring breakdown
+
+TWAK integration depth (30): TWAK is the sole execution layer, and the agent leans on more than one surface (signing, autonomous mode, x402), not a single swap call with the real logic living elsewhere.
+Self-custody integrity (25): keys and signing authority stay with the user the whole way, and local signing runs through the entire trade loop. Penalty applies (see below).
+Autonomous execution and guardrails (20): the agent signs and processes its own transactions, genuinely hands-off, inside rules you set (drawdown caps, token allowlists, per-trade and daily limits, slippage protection).
+Native x402 usage (10): the agent uses x402 to pay per request for data, inference, or tools as part of its trade loop. Real, not a README mention.
+Originality and real-world relevance (10): a new take on an agent a self-custody user would actually let run unattended, with a clear user and a plausible path to adoption.
+Demo and presentation (5): the demo clearly shows the self-custody and autonomous-signing loop end to end, backed by on-chain proof (contract address or tx hash on BSC).
+Self-custody penalty ladder. The 25 points for self-custody scale with how cleanly custody is preserved, this is not a hard disqualifier:
+
+Fully self-custodial, clean local signing → 20–25.
+A custodial component in part of the flow (third-party co-signing or custody at one step) → 8–15, depending on how central it is.
+Core trade loop depends on custody → 0–7, flagged in the panel's notes.
+Tie-breaker. In order: cleanest self-custody integrity → deepest, least-replaceable TWAK integration → most substantive x402 usage.
+
+Best Use of Agent Hub (both tracks)
+For the team that gets the most out of the CoinMarketCap AI Agent Hub, the layer that wires live CMC data into agents through MCP, x402, the CMC CLI, IDE integrations, and pre-built Skills.
+
+Best Use of BNB AI Agent SDK (both tracks)
+For the most inventive integration of the SDK. BNB Chain may award the full $2,000 to one team or split it across standout builds.
+
+How Track 1 registration works
+Track 1 is a live trading competition, so registration happens on-chain.
+
+A smart contract is deployed on BSC that records each participant's agent wallet address, forming an immutable participant list. Registration enforces a deadline: entries after the trading window opens are rejected.
+
+Register your agent via either:
+
+CLI: twak compete register
+MCP action: competition_register
+Both resolve your agent's wallet address and submit the registration transaction on your behalf.
+
+Competition contract address: https://bsctrace.com/address/0x212c61b9b72c95d95bf29cf032f5e5635629aed5 (just ask your agent to register)
+Eligible tokens: a fixed list of BEP-20 tokens listed on CoinMarketCap (149 tokens). ETH, USDT, USDC, XRP, TRX, DOGE, ZEC, ADA, LINK, BCH, DAI, TON, USD1, USDe, M, LTC, AVAX, SHIB, XAUt, WLFI, H, DOT, UNI, ASTER, DEXE, USDD, ETC, AAVE, ATOM, U, STABLE, FIL, INJ, 币安人生, NIGHT, FET, TUSD, BONK, PENGU, CAKE, SIREN, LUNC, ZRO, KITE, FDUSD, BEAT, PIEVERSE, BTT, NFT, EDGE, FLOKI, LDO, B, FF, PENDLE, NEX, STG, AXS, TWT, HOME, RAY, COMP, GWEI, XCN, GENIUS, XPL, BAT, SKYAI, APE, IP, SFP, TAG, NXPC, AB, SAHARA, 1INCH, CHEEMS, BANANAS31, RIVER, MYX, RAVE, SNX, FORM, LAB, HTX, USDf, CTM, BDX, SLX, UB, DUCKY, FRAX, BILL, WFI, KOGE, ALE, FRXUSD, USDF, GOMINING, VCNT, GUA, DUSD, SMILEK, 0G, BEAM, MY, SLX, SOON, REAL, Q, AIOZ, ZIG, YFI, TAC, lisUSD, CYS, ZAMA, TRIA, HUMA, PLUME, ZIL, XPR, ZETA, BabyDoge, NILA, ROSE, VELO, UAI, BRETT, OPEN, BSB, TOSHI, BAS, ACH, AXL, LUR, ELF, KAVA, APR, IRYS, EURI, XUSD, BARD, DUSK, SUSHI, PEAQ, COAI, BDCA, XAUM Trades outside the list do not count.
+Minimum trades to qualify: at least 1 trade per day (7 over the trading week)
+You must hold a non-zero balance of in-scope assets at the competition start to be ranked. Returns are measured hour by hour; any hour that begins with your portfolio worth $1 or less is recorded as 0% for that hour - a sub-$1 portfolio is treated as having no capital at work. This only affects wallets drained to dust, so keep your capital deployed for the full window.
+You also need to register and submit your agent address on Dorahacks. Explain a bit the strategy so we can understand how you achieved your results.
+
+Track 2 has no on-chain registration. You submit your Skill and strategy spec through DoraHacks.
+
+What you win
+💰 $36,000 cash prize pool, co-funded across all three partners.
+
+Track 1, Autonomous Trading Agents ($24,000)
+
+1st. $10,000
+
+2nd$6,000
+
+3rd$4,000
+
+4th$2,000
+
+5th$2,000
+
+Track 2, Strategy Skills ($6,000)
+
+1st$3,000
+
+2nd$2,000
+
+3rd$1,000
+
+Plus three $2,000 special prizes (see above).
+
+Top projects also get:
+
+🔑 CMC Pro API subscription credits
+🧠 CMC Labs mentorship and advisory access
+🚀 BNB Chain Kickstart Package eligibility
+Timeline
+🚀 Registration opens: June 3, 2026 (12pm UTC)
+
+🛠️ Build window (3 weeks): June 3 to June 21, 2026
+
+📈 Live trading window, Track 1 (1 week): June 22 to June 28, 2026
+
+👨‍⚖️ Judging (1 week): June 29 to July 5, 2026
+
+🏆 Winners announced: week of July 6, 2026
+
+Track 1: register your agent on-chain before the trading window opens on June 22.
+
+Track 2: submit your Skill by the end of the build window on June 21.
+
+How you're judged
+Track 1, Autonomous Trading Agents: live PnL. Your agent trades on a held-out window and is ranked by total return, with a max drawdown cap as a risk gate. Blow past the drawdown threshold (for example 30%) and you are disqualified, no matter how good the headline number looks. A minimum trade count and simulated transaction costs apply. In short: most profit without blowing up.
+
+Track 2 and all special prizes: discretionary panel. A panel of technical and ecosystem experts scores submissions across four criteria:
+
+Technical execution. Does it work, and is the on-chain piece real rather than cosmetic?
+Originality. Is this a new take on a real problem?
+Real-world relevance. Is there a clear user and a plausible path to adoption?
+Demo and presentation. Is the demo clear, and does it give a good overview of the project?
+Submission requirements
+On-chain proof: agent address on BSC (for track 1)
+Reproducible: public repo plus a demo link or video, or clear setup instructions
+No token launches during the event: no fundraising, liquidity opening, or airdrop pumping before results are announced
+AI tooling encouraged. Vibe-code freely. We care that it works, not how it was written.
+Violations may lead to disqualification or an invalid submission.
+
+Resources
+CoinMarketCap AI Agent Hub → https://coinmarketcap.com/api/agent 
+Trust Wallet Agent Kit → portal.trustwallet.com
+BNB AI Agent SDK → https://github.com/bnb-chain/bnbagent-sdk
+BNB Hack Telegram → https://t.me/+MhiOLT0YUnlmNWFk
+ 
+
+Disclaimers
+Prizes. Organizers reserve the right to withhold prizes if submissions do not meet the quality standards or criteria set for the hackathon. Awards are contingent on the judging panel's evaluation of innovation, functionality, relevance, and overall quality. If no submission sufficiently meets the requirements, prizes may not be awarded.
+
+Third-party services and trading risk. Any use of third-party AI agents, tools, or services is at the participant's own risk. Trading agents act on-chain and can incur real financial loss. If a malfunction, data issue, security incident, or financial loss occurs in connection with such services, contact the relevant provider directly. BNB Chain makes no warranties regarding third-party services and assumes no liability for any direct or indirect losses arising from their use.
+
+Built by BNB Chain, CoinMarketCap, and Trust Wallet.
+
+TRACKS
+🤖 Autonomous Trading Agents ($24,000, 5 winners)
+Powered by CMC + Trust Wallet + BNB AI Agent SDK
+
+Build an agent that reads markets and acts on them (natural-language strategy in, on-chain execution out). Your agent reads markets via CMC, decides, and signs and processes its own transactions via TWAK, all within the rules you set. Then it trades live on BSC during the competition week, and we score it on real PnL (with a few tweaks, see below).
+
+Example builds:
+
+An agent that combines CMC funding rates and Fear & Greed with TWAK auto-execution to rotate between BSC perps
+A "DCA agent with a personality" that is sentiment-aware, talks back, and signs its own txs
+A copy-trader that mirrors top wallets through your own risk filters
+
+📊 Strategy Skills ($6,000, 3 winners)
+Powered by CMC
+
+Lower entry bar, no execution layer required. Build a CMC Skill that turns market data into a trading strategy. Your deliverable is a backtestable strategy spec, not a live-trading agent. Think Quantopian-style strategy generation, adapted to crypto and authored as an LLM Skill.
+
+Example builds:
+
+A momentum Skill that blends RSI, MACD, and Fear & Greed into entry and exit rules
+A sentiment-divergence Skill that flags when social heat and on-chain flow disagree
+A regime-detection Skill that switches strategy based on derivatives positioning
+

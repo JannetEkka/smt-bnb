@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smt-aiquant-bot"
+version = "6.1.0"
+description = "AIQuant Bot — multi-persona quant trading + AI learning loop for WEEX futures."
+requires-python = ">=3.10"
+authors = [
+  { name = "JTechSMT" },
+]
+dependencies = [
+  "python-dotenv",
+  "pyyaml",
+  "requests",
+  "aiohttp",
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "google-cloud-bigquery",
+  "google-cloud-storage",
+  "google-genai",
+  "colorlog",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+]
+# Learning stack — install when running Session D+ (optimizer / hierarchical / conformal)
+learning = [
+  "optuna",
+  "pymc",
+  "arviz",
+  "mapie",
+  "statsmodels",
+]
+# Streamlit dashboard runs on Cloud — listed for local preview
+dashboard = [
+  "streamlit",
+  "plotly",
+]
+
+[tool.setuptools.packages.find]
+include = ["smt*"]
+exclude = ["archive*", "v4*", "tests*", "scripts*", "cloud_functions*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

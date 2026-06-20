@@ -1,0 +1,15 @@
+# Hardhat / node toolchain — generated locally, never committed
+node_modules/
+artifacts/
+cache/
+typechain-types/
+.env
+
+# These ARE deliverables — re-include despite the repo-root blanket `*.json` ignore.
+!agent_card.json
+!package.json
+
+# Internal planning docs — for the operator + Claude only, NOT the public submission.
+# (Kept on disk for reference; never tracked/pushed. The hackathon's own rubric is canonical.)
+CRITERIA.md
+SUBMISSION.md

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SMT World — Smart Money Trading</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- ── Landing overlay ───────────────────────────────────────────── -->
+  <div id="landing" class="landing">
+    <div class="landing-card">
+      <img src="smt_logo.png" alt="SMT" width="120" onerror="this.style.display='none'"/>
+      <h1>Smart Money Trading</h1>
+      <p class="tagline">See the smart money. Understand the move.</p>
+      <p class="sub">Six AI personas argue every trade. A learned Judge decides. You see every reason.</p>
+      <div class="landing-actions">
+        <button class="btn primary" onclick="enter('guest')">Continue as guest</button>
+        <button class="btn" onclick="enter('login')">Log in</button>
+        <button class="btn ghost" onclick="enter('register')">Register</button>
+      </div>
+      <p class="fineprint">Own SMT login · connect your exchange later to copy-trade + track usage.</p>
+    </div>
+  </div>
+
+  <!-- ── App shell ─────────────────────────────────────────────────── -->
+  <div id="app" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="smt_logo.png" alt="" width="34" onerror="this.style.display='none'"/>
+        <span>Smart Money Trading</span>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="signals">📡 Signals</button>
+        <button class="nav-item" data-view="usage">📊 Track usage</button>
+        <button class="nav-item" data-view="copy">🤝 Copy-trade</button>
+      </nav>
+
+      <div class="rail-label">PAIRS</div>
+      <div id="pairList" class="pair-list"><!-- filled by JS --></div>
+
+      <div class="user">
+        <div class="avatar">P</div>
+        <div class="user-meta"><div class="user-name">planejane</div><div class="user-tag" id="userTag">guest</div></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div id="view-signals">
+        <header class="main-head">
+          <div><h2 id="pairTitle">BTC</h2><span class="muted">SMT is thinking out loud — every persona, then the verdict.</span></div>
+          <div class="head-right"><div id="verdict" class="verdict"></div><div id="onchain"></div></div>
+        </header>
+        <div class="drill" id="drill"><!-- drill chips --></div>
+        <div id="chat" class="chat"><!-- persona chat bubbles + judge --></div>
+      </div>
+
+      <div id="view-usage" class="view hidden">
+        <header class="main-head"><div><h2>Track your usage</h2><span class="muted">Where SMT is working for you, across platforms.</span></div></header>
+        <div id="usageCards" class="cards"></div>
+        <p class="fineprint">Connect an exchange/account to populate live — WEEX connected (demo).</p>
+      </div>
+
+      <div id="view-copy" class="view hidden">
+        <header class="main-head"><div><h2>Copy-trade</h2><span class="muted">Mirror SMT once it's live + green.</span></div></header>
+        <div class="cards"><div class="card"><h3>Join the waitlist</h3><p class="muted">Copy-trading opens after a live track record. Reserve your spot.</p><button class="btn primary">Reserve a spot</button></div></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ── Drill popup ───────────────────────────────────────────────── -->
+  <div id="popup" class="popup hidden" onclick="if(event.target===this)closePopup()">
+    <div class="popup-card"><button class="popup-x" onclick="closePopup()">✕</button><div id="popupBody"></div></div>
+  </div>
+
+  <!-- ethers (optional): enables a read-only on-chain reputation fetch; UI degrades cleanly if blocked -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.1/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

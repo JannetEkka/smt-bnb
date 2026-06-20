@@ -1,0 +1,33 @@
+# SMT WEEX Trading Bot Dependencies
+
+# Core
+python-dotenv==1.0.0
+pyyaml==6.0.1
+requests==2.31.0
+aiohttp==3.9.1
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.2
+
+# ML
+catboost==1.2.2
+scikit-learn==1.3.2
+
+# Learning stack (Session D+ — TPE optimizer / bandit / reward)
+# Core learning loop is pure-Python stdlib; optuna is the production TPE backend
+# (smt.learning.optimizer auto-detects it, else falls back to the builtin TPE).
+optuna>=3.6,<5
+
+# Google Cloud
+google-cloud-bigquery==3.14.1
+google-cloud-storage==2.14.0
+google-genai==0.3.0
+db-dtypes==1.2.0
+
+
+# Logging
+colorlog==6.8.0
+
+# Testing (CI runs `pytest -q`; without this the CI Pytest step fails)
+pytest>=7

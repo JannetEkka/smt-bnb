@@ -3,8 +3,7 @@
 **Hackathon:** BNB Hack: AI Trading Agent Edition (CoinMarketCap × Trust Wallet × BNB Chain) ·
 $36,000 · build window Jun 3–21 · **submit by 2026-06-21** · live-trading window Jun 22–28.
 **Submission repo:** https://github.com/JannetEkka/smt-bnb
-**Why this one fits best:** it's an *AI trading agent* hackathon — SMT's brain maps directly, and
-the live window coincides with our fast-lane PROFITABLE target (Jun 28).
+**Why this one fits best:** it's an *AI trading agent* hackathon — SMT's brain maps directly.
 
 ---
 

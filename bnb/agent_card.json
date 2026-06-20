@@ -1,0 +1,26 @@
+{
+  "name": "Smart Money Trading (SMT)",
+  "description": "Transparent multi-persona AI trading agent: reads CoinMarketCap data, decides via 6 personas + a learned Judge, explains every call, and trades on BNB Chain via Trust Wallet — inside hard risk guardrails.",
+  "version": "6.1.0",
+  "agentType": "ai-trading-agent",
+  "owner": "@EkkaJanny96",
+  "skills": ["cmc-strategy-spec", "multi-persona-judge", "self-custody-execution", "explainable-signals"],
+  "endpoints": {
+    "dashboard": "https://jannetekka.github.io/smt-bnb/",
+    "repo": "https://github.com/JannetEkka/smt-bnb",
+    "wallet": "<agent-wallet-address>"
+  },
+  "integrations": {
+    "data": "CoinMarketCap AI Agent Hub (MCP / x402 / CLI)",
+    "execution": "Trust Wallet Agent Kit (self-custody local signing, BSC)",
+    "sdk": "BNB AI Agent SDK"
+  },
+  "registry": {
+    "chain": "bscTestnet",
+    "contract": "<deployed-SMTAgentRegistry-address>",
+    "agentId": null,
+    "competition": "0x212c61b9b72c95d95bf29cf032f5e5635629aed5"
+  },
+  "reputation": "on-chain correct/graded from +2h/+4h direction accuracy",
+  "transparency": "white-box persona votes + counterfactual faithfulness check"
+}

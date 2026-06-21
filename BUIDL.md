@@ -40,6 +40,8 @@ A2A/AP2, x402) + Vertex AI / BigQuery ML.
 `jtech26smt@gmail.com` · X `@JTechSMT` · LinkedIn (above)
 
 ## Submission notes
-- Public repo (showcase); tuned params / per-pair research kept private (the edge).
+- SMT isn't vaporware: a live multi-persona daemon ran in **real time Jan–May 2026** (thousands of
+  executed decisions across 8 pairs, wins *and* losses logged) — that corpus trains the learner. Tuned
+  params / per-pair research / raw equity curve kept private (the edge).
 - Track 1 on-chain proof = agent wallet address + BSC tx hash. Integration surfaces: CMC Agent Hub,
   Trust Wallet Agent Kit, BNB AI Agent SDK. See `integration_stub.py`.

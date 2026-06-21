@@ -55,8 +55,11 @@ python3 bnb/agent.py                      # offline demo: CMC → personas → J
 - **Public dashboard (SMT World):** https://jannetekka.github.io/smt-bnb/
 - **X:** https://x.com/JTechSMT · built solo by [@EkkaJanny96](https://x.com/EkkaJanny96)
 
-## Open vs private (the alpha boundary)
-The **architecture, learning approach, XAI, and validation methodology are fully open** (this repo).
-The **tuned/learned parameters, per-pair research, and raw PnL/equity curve are kept private** — they're
-the edge. Judges verify performance from the **on-chain accuracy reputation + the open method**, not
-from an exposed track record.
+## Track record & alpha boundary
+SMT isn't a paper sketch — a live, multi-persona daemon ran in **real time from January to May 2026**,
+making thousands of logged, executed decisions across 8 perpetual-futures pairs (every win *and* loss
+recorded). That history is what the learning loop trains on and the validation gates guard against — we
+treat honesty about drawdowns as a feature, not something to bury. The **architecture, learning, XAI,
+and validation methodology are fully open** (this repo); the **tuned parameters and raw equity curve
+stay private** — that's the edge. Judges verify from the **open method + the on-chain decision
+reputation**, not an exposed ledger.
